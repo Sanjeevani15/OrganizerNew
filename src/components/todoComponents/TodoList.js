@@ -8,11 +8,11 @@ export const TodoList = () => {
   const filterTodos = getTodosByVisibilityFilter(todos, visibilityFilter);
 
   return (
-    <Box my={3}>
+    <div className="alltodos">
       {filterTodos.length ? filterTodos.map(todo => (
         <Todo key={`todo-${todo.id}`} todo={todo} />
       )) : <Box textAlign="center" my="4">No Todos Yay!</Box>}
-    </Box>
+    </div>
   )
 }
 

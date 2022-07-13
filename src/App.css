@@ -57,18 +57,16 @@ main{
   /* display: flex; */
   align-items: center;
   text-align: center;
-  background-color: white;
+  background-color:transparent;
   font-family:Arial, Helvetica, sans-serif;
   justify-content:space-around;
-  margin: 2rem 8rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
 
 }
 
-.set-time-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
+
 
 .button-child {
   margin: 0;
@@ -91,9 +89,20 @@ main{
   position: relative;
   float: left;
   height: 100%;
-  width:40%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width:80%;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  background-color: transparent;
 }
+.headone{
+  color:rgb(143, 90, 173);
+  font-weight:bold;
+  font-size:2rem;
+  margin-left: 0;
+  text-align:left;
+  /* margin-left: 21rem; */
+}
+
+
 .main-two{
   display: flex;
   flex-direction: column;
@@ -101,8 +110,18 @@ main{
   position: relative;
   float: right;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  margin-bottom: 2.5rem;
-  /* height: 50%; */
+  width:19rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background-color:white ;
+}
+.set-time-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content:space-around;
+  margin-right: 1rem;
+  margin-left: 1rem;
+
 }
 span{
   font-size:1rem;
@@ -110,13 +129,35 @@ span{
   margin:0
 }
 
-.music-listen-container{
+.alltodos{
+  /* background-color: green; */
+  margin: 1.5rem;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  height: 30rem;
+}
+.todoss{
+  color:blanchedalmond;
+  background-color: blue;
+  /* background:   #FC94A1;
+  box-shadow: 0px 10px 20px 0px #FDC0C7; */
+  background: linear-gradient(180deg, #bb67ff 0%, #c484f3 100%);
+  box-shadow: 0px 10px 20px 0px #e0c6f5;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  height: 8rem !important;
+  width: 17.5rem !important; 
+  border-radius: 0.7rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+  margin: 1.5rem;
+  margin-bottom: 1rem;
 
 }
+
+
 
 .main-three{
   display: flex;
@@ -127,6 +168,7 @@ span{
   margin-top: 2rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .flex-container{
   display: flex;
   float:right ;
@@ -151,98 +193,32 @@ span{
   min-height: 100vh;
 }
 
-.c-player {
-  /* display: block; */
-  /* background-color:rgb(145, 211, 211);; */
-  padding: 3rem;
-  border-radius: 16px;
-  height: 100%;
 
-}
-.color-teal{
-  background-color: rgb(145, 211, 211);
-}
 
-.c-player > h4 {
-  color: #FFF;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 500;
-  text-align: center;
-}
+/* header text css styling */
 
-.c-player > p {
-  color: #AAA;
-  font-size: 14px;
-  text-align: center;
-  font-weight: 600;
-}
-
-.c-player > p span {
-  font-weight: 400;
-}
-
-.c-player--details .details-title {
-  color: #EEE;
-  font-size: 28px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.4);
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.c-player--details .details-artist {
-  color: #AAA;
-  font-size: 20px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.4);
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.c-player--controls {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.c-player--controls .play-btn {
-  display: flex;
-  margin: 0 30px;
-  padding: 20px;
-  border-radius: 50%;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), -4px -4px 10px rgba(255, 255, 255, 0.4), inset -4px -4px 10px rgba(0, 0, 0, 0.4), inset 4px 4px 10px rgba(255, 255, 255, 0.4);
-  border: none;
-  outline: none;
-  background-color: black;
-  color: #FFF;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.c-player--controls .skip-btn {
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: #888;
-  font-size: 18px;
-}
-
- 
-/* <Typewriter
-   textStyle={{
-     fontSize:'3rem',
-     fontFamily: 'Arial, Helvetica, sans-serif',
-     color:'black',   
-   }}
-  options={{
-    strings: ['Plan you day out ...', 'Set your timer up...','hussle and achieve your dreams...'],
-    autoStart: true,
-    loop: true,
-    pauseFor:1000,
-  }}
-/> */
 
 .headertype{
-  display: inline-block;
+  font-size: 2rem;
+  display: inline;
+  white-space: nowrap;
+  margin-top: 1rem;
+  color:white;
+
+  
+}
+ .innerhead{
+ 
+  text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
+} 
+.Typewriter__wrapper, .Typewriter__cursor{
+  font-size: 3.5rem;
+  color:white;
+  font-weight: bold;
+  text-shadow: 0px 4px 0px #805ead,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.09),
+                 0px 34px 30px rgba(0,0,0,0.1);
 }

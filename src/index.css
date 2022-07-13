@@ -20,10 +20,15 @@ html,body {
 
 #root {
   margin: 0;
-  height: 100%;
-  width: 100%;
+  /* height: 100%;
+  width: 100%; */
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* background: rgb(94, 155, 255); */
+  /* backgrounrgb(114, 133, 163)55); */
+  /* background-image: linear-gradient(to right, #D8B5FF , #1EAE98); */
+  background-color: #fba8a4;
+background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
+background-repeat: repeat;
 }
+

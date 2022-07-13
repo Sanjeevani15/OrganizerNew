@@ -2,11 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem;
+    margin: 1rem;
     padding: 0 2rem 2rem 2rem;
     border-radius: 1rem;
     /* background-color: greenyellow; */
-    background-color: rgb(145, 211, 211);
+    /* background-color: rgb(145, 211, 211); */
+    background-color:  #dad2f3;
 }
 
 #time-left {

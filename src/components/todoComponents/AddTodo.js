@@ -20,22 +20,32 @@ export const AddTodo = () => {
     return (
         <form onSubmit={handleSubmit}>
             <Flex>
-                <FormControl>
+                <div>
                     <Input
                         type="text"
+                        placeholder='Add a new task...'
                         value={value}
                         onChange={handleInput}
                         borderTopRightRadius={0}
                         borderBottomRightRadius={0}
+                        size="md"
+                        color='teal'
+                        borderColor='pink.400'
+                        borderWidth={2}
+                        focusBorderColor="purple.400"
+                        width={500}
+                        
+                          
                     />
-                </FormControl>
+                </div>
                 <Button
+
                     colorScheme="teal"
                     type="submit"
                     disabled={!value}
                     borderTopLeftRadius={0}
                     borderBottomLeftRadius={0}
-                >Add Todo</Button>
+                >Add Task</Button>
             </Flex>
         </form>
     )
