@@ -3,10 +3,12 @@
     flex-direction: column;
     align-items: center;
     margin: 1rem;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem 1rem 2rem;
     border-radius: 1rem;
     /* background-color: rgb(145, 211, 211); */
-    background-color: #dad2f3;
+    /* background-color: #dad2f3; */
+    background-color: #d3c7f7;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .button-container {
@@ -15,11 +17,13 @@
     width: 100%;
 }
 #session-label{
-    color:black;
+    color:purple;
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-top: 0.8rem;
+    font-weight: bold;
 }
 #session-length{
-    font-size:1.2rem;
+    font-size:1.4rem;
+   
 }

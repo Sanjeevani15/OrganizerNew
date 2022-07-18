@@ -16,9 +16,15 @@ export const Todo = ({ todo }) => {
     return (
        
         <div className="todoss">
-            {/* mb={1} bgColor="lightcoral" p={2}> */}
             <Checkbox onChange={handleChecked} colorScheme="green" isChecked={checked}>
-                <Text as={todo.completed && "del"}>{todo.content}</Text>
+                <Text 
+                as={todo.completed && "del"} 
+                color='white' 
+                fontSize='1.2rem' 
+                textAlign='left' 
+                // fontFamily='Times New Roman' 
+                paddingLeft='0.2rem'
+                >{todo.content}</Text>
             </Checkbox>
         </div>
      

@@ -9,7 +9,7 @@ const Reset = (
     return (
         <div className='reset-container'>
             <button
-                className='button-child'
+                class="btn btn-danger"
                 id='reset'
                 onClick={_resetTimer}
                 >

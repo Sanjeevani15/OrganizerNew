@@ -13,7 +13,7 @@ const SessionTime = ()=> {
             <h2 id='session-label'>Session Length</h2>
             <div className='button-container'>
                 <button
-                    className='button-child'
+                    className="btn btn-info shiny"
                     id='session-increment'
                     onClick={timerRunning === false && sessionLength < 60 ? _incSession : null}
                 >
@@ -27,7 +27,8 @@ const SessionTime = ()=> {
                 </h3>
                 
                 <button
-                    className='button-child'
+                    // className='button-child'
+                    className="btn btn-warning shiny"
                     id='session-decrement'
                     onClick={timerRunning === false && sessionLength > 1 ? _decSession : null}
                 >

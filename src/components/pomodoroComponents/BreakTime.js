@@ -13,7 +13,7 @@ const BreakTime = () => {
             <h2 id='break-label'>Break Length</h2>
             <div className='button-container'>
                 <button
-                    className='button-child'
+                    className="btn btn-info shiny"
                     id='break-increment'
                     onClick={timerRunning === false && breakLength < 60 ? _incBreak : null}
                 >
@@ -27,7 +27,7 @@ const BreakTime = () => {
                 </h3>
                 
                 <button
-                    className='button-child'
+                      className="btn btn-warning shiny"
                     id='break-decrement'
                     onClick={timerRunning === false && breakLength > 1 ? _decBreak : null}
                 >

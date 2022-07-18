@@ -1,4 +1,4 @@
-import { Button, Flex, FormControl, Input } from "@chakra-ui/react"
+import { Button, Flex, FormControl, Input ,ButtonGroup} from "@chakra-ui/react"
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../../redux/actions/actions";
@@ -28,24 +28,29 @@ export const AddTodo = () => {
                         onChange={handleInput}
                         borderTopRightRadius={0}
                         borderBottomRightRadius={0}
-                        size="md"
-                        color='teal'
-                        borderColor='pink.400'
+                        size="lg"
+                        focusBorderColor='pink.400'
                         borderWidth={2}
-                        focusBorderColor="purple.400"
-                        width={500}
+                        borderColor="purple.400"
+                        width={500}   
+                        color='purple'
+                        fontWeight='400' 
                         
-                          
+                           
+                        
+                         
                     />
                 </div>
+                <ButtonGroup size='lg'>
                 <Button
-
-                    colorScheme="teal"
+                    colorScheme="purple"
                     type="submit"
                     disabled={!value}
                     borderTopLeftRadius={0}
                     borderBottomLeftRadius={0}
+                      
                 >Add Task</Button>
+                </ButtonGroup>
             </Flex>
         </form>
     )

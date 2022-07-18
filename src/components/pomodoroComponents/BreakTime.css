@@ -4,12 +4,13 @@
     align-items: center;
     margin: 1rem;
     margin-bottom: 1.5rem;
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 2rem 1rem 2rem;
     border-radius: 1rem;
     /* background-color: greenyellow; */
     /* background-color: rgb(120, 194, 194); */
     /* background-color: rgb(145, 211, 211); */
-    background-color:  #dad2f3;
+    background-color: #d3c7f7;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .button-container {
@@ -19,13 +20,14 @@
 }
 
 #break-label{
-    color:black;
+    color:purple;
     font-size: 1.2rem;
     padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-top: 0.8rem;
+    font-weight: bold;
 }
 
 #break-length{
-    font-size:1.2rem;
+    font-size:1.4rem;
 }
 

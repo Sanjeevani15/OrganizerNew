@@ -16,19 +16,24 @@ html,body {
   height: 100%;
   width: 100%;
   font-size: 0.8rem;
+  background-color: #d3c7f7;
+  /* background-image:linear-gradient(315deg, #fba8a4 20%, #d3c7f7 64%);    */
+  background-image:linear-gradient(315deg, rgba(211, 199, 247, 0.2) 20%,rgba(251, 168, 164, 0.2)  64%); 
 }
 
 #root {
   margin: 0;
-  /* height: 100%;
-  width: 100%; */
+  height: 100%;
+  /*width: 100%; */
   display: flex;
   flex-direction: column;
   text-align: center;
   /* backgrounrgb(114, 133, 163)55); */
-  /* background-image: linear-gradient(to right, #D8B5FF , #1EAE98); */
-  background-color: #fba8a4;
-background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
-background-repeat: repeat;
+  background-image: linear-gradient(to right, #D8B5FF , #1EAE98);
+ background-image:linear-gradient(315deg, rgba(251, 168, 164, 0.4) 20%, rgba(211, 199, 247, 0.6) 64%); 
+ /* background-color: white; */
+ 
+
+
 }
 

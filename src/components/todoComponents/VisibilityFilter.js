@@ -7,8 +7,8 @@ export const VisibilityFilter = () => {
     const dispatch = useDispatch();
 
     return (
-        <Container centerContent>
-            <Tabs>
+        <Container className='visibletabs'>
+            <Tabs variant='soft-rounded' colorScheme='red' >
                 <TabList>
                     {Object.keys(VISIBILITY_FILTER).map(filterkey => {
                         const currentFilter = VISIBILITY_FILTER[filterkey];

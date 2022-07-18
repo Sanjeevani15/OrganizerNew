@@ -10,7 +10,7 @@ const StartStop = () => {
     return (
         <div className='start-stop-container'>
             <button
-                className='button-child'
+                className={timerRunning ? 'btn btn-info' : 'btn btn-primary'}
                 id='start-stop'
                 onClick={timerRunning ? _stopTimer : _startTimer}
                 >

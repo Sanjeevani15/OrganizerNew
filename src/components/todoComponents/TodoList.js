@@ -11,7 +11,15 @@ export const TodoList = () => {
     <div className="alltodos">
       {filterTodos.length ? filterTodos.map(todo => (
         <Todo key={`todo-${todo.id}`} todo={todo} />
-      )) : <Box textAlign="center" my="4">No Todos Yay!</Box>}
+      )) : <Box 
+              textAlign="center"
+              my="4" 
+              color="purple" 
+              fontSize='2rem' 
+              fontWeight='bold'
+              // color='#f1ebe5'
+              textShadow='0 13.36px 8.896px #c4b59d,0 -2px 1px #fff'
+              >No Todos Yay!</Box>}
     </div>
   )
 }

@@ -27,8 +27,8 @@ options={{
   strings: ['Plan your day out ...', 'Set your timer up...','Hustle and achieve your goal...'],
   autoStart: true,
   loop: true,
-  pauseFor:1000,
-  deleteSpeed:20,
+  pauseFor:500,
+  deleteSpeed:10,
 }} />
  </p>
 </div>
@@ -39,16 +39,17 @@ options={{
 {/* for todo list */}
   <div className='main-one'>
 <p className='headone'>TODO</p>
-<AddTodo/>
+<AddTodo/><VisibilityFilter/>
 <TodoList/>
-<VisibilityFilter/>
+
 </div>
 
 {/* <div className='flex-container'> */}
 
 {/* FOR POMODORO */}
 <div className='main-two'>
-<Heading my="4"> Pomodoro</Heading>
+{/* <Heading my="4"> Pomodoro</Heading> */}
+<p className='headtwo'>Pomodoro</p>
 <div className='set-time-container'>
    <Timer />
    {/* <div> */}
