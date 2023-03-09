@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import bootstrap from '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import {Heading} from '@chakra-ui/react'
 import AddTodo from './components/todoComponents/AddTodo';
 import TodoList from './components/todoComponents/TodoList';
 import VisibilityFilter from './components/todoComponents/VisibilityFilter';

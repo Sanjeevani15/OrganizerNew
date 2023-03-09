@@ -38,7 +38,6 @@ const Timer = () => {
         return () => clearInterval(countdown);
     },
     [timerRunning, secondsLeft, interval]);
-    // [timerRunning, secondsLeft, interval, switchBreak, switchSession, decSeconds]);
 
     return(
         <div className='timer-container'>

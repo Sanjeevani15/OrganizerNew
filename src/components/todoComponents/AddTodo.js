@@ -1,4 +1,4 @@
-import { Button, Flex, FormControl, Input ,ButtonGroup} from "@chakra-ui/react"
+import { Button, Flex, Input ,ButtonGroup} from "@chakra-ui/react"
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../../redux/actions/actions";
